@@ -109,16 +109,16 @@ Mục tiêu: tăng khả năng tìm thấy sản phẩm và giữ chân khách h
 
 ## 5. Ưu tiên gần nhất
 
-| Ưu tiên | Công việc | Kết quả mong đợi |
-| --- | --- | --- |
-| P0 | Chuẩn hóa dữ liệu sản phẩm | Sản phẩm không còn viết trực tiếp trong phần render UI |
-| P0 | Trang chi tiết sản phẩm | Có ảnh, mô tả, tồn kho và nút thêm giỏ |
-| P0 | Lưu giỏ hàng | Giỏ hàng giữ nguyên sau khi tải lại trang |
-| P0 | Thiết kế kiến trúc bảo mật | Có mô hình phân quyền và checklist bảo mật trước khi làm backend |
-| P1 | Bộ lọc và sắp xếp | Khách tìm được sản phẩm nhanh hơn |
-| P1 | Checkout mẫu | Hoàn thiện luồng từ giỏ đến xác nhận đơn |
-| P1 | Kiểm thử responsive | Hoạt động tốt trên mobile, tablet và desktop |
-| P1 | Backend và quản trị an toàn | Dữ liệu thật có xác thực, phân quyền và validation |
+| Ưu tiên | Công việc | Trạng thái | Kết quả mong đợi |
+| --- | --- | --- | --- |
+| P0 | Chuẩn hóa dữ liệu sản phẩm | Hoàn thành | Dữ liệu nằm trong `data/products.json`, sẵn sàng thay bằng API |
+| P0 | Trang chi tiết sản phẩm | Hoàn thành | Có ảnh, mô tả, tồn kho và nút thêm giỏ |
+| P0 | Lưu giỏ hàng | Hoàn thành | Giỏ hàng giữ nguyên sau khi tải lại trang |
+| P0 | Thiết kế kiến trúc bảo mật | Hoàn thành | Mô hình quyền và ranh giới hệ thống nằm trong `SECURITY.md` |
+| P1 | Bộ lọc và sắp xếp | Chờ nghiệm thu frontend | Khách tìm được sản phẩm nhanh hơn |
+| P1 | Checkout mẫu | Chờ nghiệm thu frontend | Hoàn thiện luồng từ giỏ đến xác nhận đơn |
+| P1 | Kiểm thử responsive | Chờ nghiệm thu frontend | Hoạt động tốt trên mobile, tablet và desktop |
+| P1 | Backend và quản trị an toàn | Chưa bắt đầu — backend | Dữ liệu thật có xác thực, phân quyền và validation |
 
 ## 6. Cấu trúc hiện tại
 
@@ -133,7 +133,8 @@ Website-for-shop/
 ├── assets/products/           # Ảnh sản phẩm
 ├── style.css                  # Thiết kế dùng chung và responsive
 ├── script.js                  # Dữ liệu mẫu, catalog, chi tiết và giỏ hàng
-└── ROADMAP.md                 # Kế hoạch và hướng dẫn phối hợp
+├── ROADMAP.md                 # Kế hoạch và hướng dẫn phối hợp
+└── SECURITY.md                # Kiến trúc bảo mật và hợp đồng API dự kiến
 ```
 
 Khi dự án lớn hơn, nên tách thành các thư mục `assets/`, `pages/`, `components/`, `data/` và `tests/`, hoặc chuyển sang framework sau khi đội thống nhất.
