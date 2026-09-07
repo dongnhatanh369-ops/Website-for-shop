@@ -124,10 +124,14 @@ Mục tiêu: tăng khả năng tìm thấy sản phẩm và giữ chân khách h
 
 ```text
 Website-for-shop/
-├── index.html   # Cấu trúc và nội dung giao diện
-├── style.css    # Thiết kế, layout và responsive
-├── script.js    # Sản phẩm mẫu, tìm kiếm, lọc và giỏ hàng
-└── ROADMAP.md   # Kế hoạch và hướng dẫn phối hợp
+├── index.html                  # Trang chủ và sản phẩm nổi bật
+├── pages/
+│   ├── products.html          # Danh sách, tìm kiếm và lọc sản phẩm
+│   └── product-detail.html    # Chi tiết sản phẩm theo tham số ?id=
+├── assets/products/           # Ảnh sản phẩm
+├── style.css                  # Thiết kế dùng chung và responsive
+├── script.js                  # Dữ liệu mẫu, catalog, chi tiết và giỏ hàng
+└── ROADMAP.md                 # Kế hoạch và hướng dẫn phối hợp
 ```
 
 Khi dự án lớn hơn, nên tách thành các thư mục `assets/`, `pages/`, `components/`, `data/` và `tests/`, hoặc chuyển sang framework sau khi đội thống nhất.
