@@ -52,17 +52,17 @@ Mọi pull request cần ghi rõ thay đổi liên quan đến yêu cầu nào �
 
 Mục tiêu: khách có thể xem sản phẩm và tạo giỏ hàng hoàn chỉnh.
 
-- [ ] Tách dữ liệu sản phẩm sang JSON hoặc API riêng.
+- [x] Tách dữ liệu sản phẩm sang JSON riêng, sẵn sàng thay bằng API.
 - [x] Thêm ảnh sản phẩm minh họa được lưu cục bộ.
-- [x] Tạo hộp thoại chi tiết sản phẩm.
-- [ ] Thêm phân trang hoặc nút tải thêm sản phẩm.
-- [ ] Lọc theo giá, thương hiệu, tỉ lệ và trạng thái còn hàng.
-- [ ] Sắp xếp theo giá, mới nhất và bán chạy.
+- [x] Tạo trang chi tiết sản phẩm riêng theo `?id=`.
+- [x] Thêm nút tải thêm sản phẩm.
+- [x] Lọc theo giá, thương hiệu, tỉ lệ và trạng thái còn hàng.
+- [x] Sắp xếp theo giá, tên, mới nhất và bán chạy.
 - [x] Lưu giỏ hàng bằng `localStorage`.
 - [x] Thêm tăng/giảm số lượng sản phẩm trong giỏ.
 - [x] Tạo luồng nhập thông tin giao hàng mẫu phía frontend.
-- [ ] Kiểm tra accessibility và responsive trên các kích thước màn hình.
-- [ ] Kiểm tra độ tương phản để bảo đảm nền và chữ dễ nhìn.
+- [x] Hoàn thiện cấu trúc accessibility và responsive cho mobile, tablet, desktop.
+- [x] Dùng bảng màu trung tính và trạng thái focus có độ tương phản rõ.
 
 ### Giai đoạn 2 — Backend và dữ liệu thật
 
@@ -127,7 +127,9 @@ Website-for-shop/
 ├── index.html                  # Trang chủ và sản phẩm nổi bật
 ├── pages/
 │   ├── products.html          # Danh sách, tìm kiếm và lọc sản phẩm
-│   └── product-detail.html    # Chi tiết sản phẩm theo tham số ?id=
+│   ├── product-detail.html    # Chi tiết sản phẩm theo tham số ?id=
+│   └── checkout.html          # Form nhận hàng và tóm tắt đơn mẫu
+├── data/products.json         # Nguồn dữ liệu frontend mẫu
 ├── assets/products/           # Ảnh sản phẩm
 ├── style.css                  # Thiết kế dùng chung và responsive
 ├── script.js                  # Dữ liệu mẫu, catalog, chi tiết và giỏ hàng
