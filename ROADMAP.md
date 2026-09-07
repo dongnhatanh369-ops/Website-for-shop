@@ -138,6 +138,7 @@ Website-for-shop/
 │   └── checkout.html          # Form nhận hàng và tóm tắt đơn mẫu
 ├── data/products.json         # Nguồn dữ liệu frontend mẫu
 ├── assets/products/           # Ảnh sản phẩm
+├── assets/brand/              # Logo và banner gốc của cửa hàng
 ├── style.css                  # Thiết kế dùng chung và responsive
 ├── script.js                  # Dữ liệu mẫu, catalog, chi tiết và giỏ hàng
 ├── tests/frontend-checks.mjs  # Kiểm tra frontend không cần dependency

@@ -39,6 +39,9 @@ check(/@media\(max-width:900px\)/.test(css), 'Thiếu breakpoint tablet 900px');
 check(/@media\(max-width:700px\)/.test(css), 'Thiếu breakpoint mobile 700px');
 check(/prefers-reduced-motion/.test(css), 'Thiếu hỗ trợ reduced motion');
 check(/focus-visible/.test(css), 'Thiếu trạng thái focus bàn phím');
+check(home.includes('assets/brand/logo.jpg'), 'Trang chủ chưa dùng logo gốc');
+check(home.includes('assets/brand/banner.jpg'), 'Trang chủ chưa dùng banner gốc');
+check(catalog.includes('../assets/brand/logo.jpg'), 'Catalog chưa dùng logo gốc');
 
 const luminance = hex => {
   const values = hex.match(/[a-f\d]{2}/gi).map(x => parseInt(x,16)/255).map(x => x<=.03928?x/12.92:((x+.055)/1.055)**2.4);
