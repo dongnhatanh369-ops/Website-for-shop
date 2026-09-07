@@ -53,14 +53,14 @@ Mọi pull request cần ghi rõ thay đổi liên quan đến yêu cầu nào �
 Mục tiêu: khách có thể xem sản phẩm và tạo giỏ hàng hoàn chỉnh.
 
 - [ ] Tách dữ liệu sản phẩm sang JSON hoặc API riêng.
-- [ ] Thêm ảnh sản phẩm thật và ảnh dự phòng.
-- [ ] Tạo trang chi tiết sản phẩm.
+- [x] Thêm ảnh sản phẩm minh họa được lưu cục bộ.
+- [x] Tạo hộp thoại chi tiết sản phẩm.
 - [ ] Thêm phân trang hoặc nút tải thêm sản phẩm.
 - [ ] Lọc theo giá, thương hiệu, tỉ lệ và trạng thái còn hàng.
 - [ ] Sắp xếp theo giá, mới nhất và bán chạy.
-- [ ] Lưu giỏ hàng bằng `localStorage`.
-- [ ] Thêm tăng/giảm số lượng sản phẩm trong giỏ.
-- [ ] Tạo trang nhập thông tin giao hàng.
+- [x] Lưu giỏ hàng bằng `localStorage`.
+- [x] Thêm tăng/giảm số lượng sản phẩm trong giỏ.
+- [x] Tạo luồng nhập thông tin giao hàng mẫu phía frontend.
 - [ ] Kiểm tra accessibility và responsive trên các kích thước màn hình.
 - [ ] Kiểm tra độ tương phản để bảo đảm nền và chữ dễ nhìn.
 
@@ -194,6 +194,12 @@ Các đầu việc phù hợp để bắt đầu:
 - Lỗi trả về cho người dùng không được làm lộ stack trace, cấu trúc hệ thống hoặc secret.
 - Mọi thay đổi về đăng nhập, phân quyền, thanh toán và dữ liệu cá nhân cần review riêng.
 - Trước khi đưa lên production cần có HTTPS, backup, khôi phục dữ liệu và kế hoạch xử lý sự cố.
+
+### Phân chia trách nhiệm
+
+- Frontend: giao diện an toàn, giới hạn/validate đầu vào cơ bản, không lưu dữ liệu nhạy cảm, CSP và trải nghiệm responsive/accessibility.
+- Backend: xác thực, phân quyền, session, validate lại toàn bộ đầu vào, bảo vệ API, mã hóa dữ liệu, audit log và thanh toán.
+- Kiểm tra phía frontend chỉ hỗ trợ trải nghiệm người dùng, không thay thế kiểm tra và phân quyền phía backend.
 
 ## 12. Cập nhật roadmap
 
