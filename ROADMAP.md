@@ -115,9 +115,9 @@ Mục tiêu: tăng khả năng tìm thấy sản phẩm và giữ chân khách h
 | P0 | Trang chi tiết sản phẩm | Hoàn thành | Có ảnh, mô tả, tồn kho và nút thêm giỏ |
 | P0 | Lưu giỏ hàng | Hoàn thành | Giỏ hàng giữ nguyên sau khi tải lại trang |
 | P0 | Thiết kế kiến trúc bảo mật | Hoàn thành | Mô hình quyền và ranh giới hệ thống nằm trong `SECURITY.md` |
-| P1 | Bộ lọc và sắp xếp | Chờ nghiệm thu frontend | Khách tìm được sản phẩm nhanh hơn |
-| P1 | Checkout mẫu | Chờ nghiệm thu frontend | Hoàn thiện luồng từ giỏ đến xác nhận đơn |
-| P1 | Kiểm thử responsive | Chờ nghiệm thu frontend | Hoạt động tốt trên mobile, tablet và desktop |
+| P1 | Bộ lọc và sắp xếp | Hoàn thành frontend | Lọc theo nhiều thuộc tính, tìm kiếm, tải thêm và 6 cách sắp xếp |
+| P1 | Checkout mẫu | Hoàn thành frontend | Form có validation, tóm tắt đơn và phí vận chuyển mẫu |
+| P1 | Kiểm thử responsive | Hoàn thành frontend | Breakpoint mobile/tablet, focus, reduced motion và kiểm tra tự động |
 | P1 | Backend và quản trị an toàn | Chưa bắt đầu — backend | Dữ liệu thật có xác thực, phân quyền và validation |
 
 ## 6. Cấu trúc hiện tại
@@ -133,6 +133,8 @@ Website-for-shop/
 ├── assets/products/           # Ảnh sản phẩm
 ├── style.css                  # Thiết kế dùng chung và responsive
 ├── script.js                  # Dữ liệu mẫu, catalog, chi tiết và giỏ hàng
+├── tests/frontend-checks.mjs  # Kiểm tra frontend không cần dependency
+├── package.json               # Lệnh npm test
 ├── ROADMAP.md                 # Kế hoạch và hướng dẫn phối hợp
 └── SECURITY.md                # Kiến trúc bảo mật và hợp đồng API dự kiến
 ```
