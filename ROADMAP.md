@@ -48,6 +48,13 @@ Mọi pull request cần ghi rõ thay đổi liên quan đến yêu cầu nào �
 
 ## 4. Lộ trình
 
+Tài liệu chi tiết cho từng giai đoạn:
+
+- [Phase 1 — Storefront MVP](docs/phases/PHASE-1.md)
+- [Phase 2 — Backend và dữ liệu thật](docs/phases/PHASE-2.md)
+- [Phase 3 — Thanh toán và vận hành](docs/phases/PHASE-3.md)
+- [Phase 4 — Tăng trưởng](docs/phases/PHASE-4.md)
+
 ### Giai đoạn 1 — Hoàn thiện storefront MVP
 
 Mục tiêu: khách có thể xem sản phẩm và tạo giỏ hàng hoàn chỉnh.
@@ -134,6 +141,7 @@ Website-for-shop/
 ├── style.css                  # Thiết kế dùng chung và responsive
 ├── script.js                  # Dữ liệu mẫu, catalog, chi tiết và giỏ hàng
 ├── tests/frontend-checks.mjs  # Kiểm tra frontend không cần dependency
+├── docs/phases/               # Kế hoạch, phạm vi và DoD từng phase
 ├── package.json               # Lệnh npm test
 ├── ROADMAP.md                 # Kế hoạch và hướng dẫn phối hợp
 └── SECURITY.md                # Kiến trúc bảo mật và hợp đồng API dự kiến
